@@ -11,8 +11,29 @@ p {
 }
 
 hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     border: 0;
     border-top: 3px solid #e29578;
+}
+
+#org {
+    text-align: center;
+}
+
+#org p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    margin-bottom: 0px;
+}
+
+#org span {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+#org img {
+    height: 14em;
 }
