@@ -17,6 +17,10 @@ hr {
     border-top: 3px solid #e29578;
 }
 
+#dates h2 {
+    text-align: center;
+}
+
 #org {
     text-align: center;
 }
