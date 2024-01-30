@@ -42,6 +42,21 @@ hr {
     height: 14em;
 }
 
+#sponsors img {
+    width: 100%;
+}
+
+#sponsors {
+    text-align: center;
+}
+
+#sponsors p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    margin-bottom: 0px;
+}
+
 .bd-callout {
     padding: 1.25rem;
     margin-top: 1.25rem;
