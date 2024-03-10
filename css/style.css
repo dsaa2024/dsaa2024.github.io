@@ -10,6 +10,10 @@ p {
     margin-top: 20px;
 }
 
+s {
+    color: lightgray;
+}
+
 hr {
     margin-top: 2rem;
     margin-bottom: 2rem;
