@@ -146,6 +146,9 @@
       </div>
       <hr/>
     </div>
+    <div id="cookieConsentBanner" class="cookie-consent-banner" style="display: none; position: fixed; bottom: 0; width: 100%; background-color: #f1f1f1; color: black; text-align: center;">
+      <p style="margin: 10px;">We use essential cookies to make our site work. &nbsp;&nbsp;&nbsp; <a href="#" onclick="refuseCookies()">Refuse</a> &nbsp;&nbsp;&nbsp; <a href="#" onclick="acceptCookies()">Accept</a></p>
+    </div>
     <div class="footer">
       <div class="row">
         <div class="col-md-10 offset-md-1" style="text-align: center;">
@@ -153,5 +156,29 @@
         </div>
       </div>
     </div>
+    <script>
+      // Check if the user has already accepted cookies
+      function checkCookieConsent() {
+          if (localStorage.getItem('cookiesAccepted') === 'true') {
+              document.getElementById('cookieConsentBanner').style.display = 'none';
+          } else {
+              document.getElementById('cookieConsentBanner').style.display = 'block';
+          }
+      }
+      // Function to call when the user accepts cookies
+      function acceptCookies() {
+          localStorage.setItem('cookiesAccepted', 'true');
+          document.getElementById('cookieConsentBanner').style.display = 'none';
+      }
+      // Function to call when the user refuses cookies
+      function refuseCookies() {
+          localStorage.setItem('cookiesAccepted', 'false');
+          document.getElementById('cookieConsentBanner').style.display = 'none';
+      }
+      // Run the checkCookieConsent function when the page loads
+      window.onload = function() {
+          checkCookieConsent();
+      }
+    </script>
   </body>
 </html>
