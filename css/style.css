@@ -73,3 +73,7 @@ hr {
 .bd-callout-info {
     border-left-color: #5bc0de;
 }
+
+#accepted li {
+    margin-bottom: 1.25rem;
+}
