@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Detailed Program | DSAA 2024</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            /* font-size: smaller; */
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+    </style>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">DSAA 2024</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="key-dates.html">Key Dates</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Calls
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="cfp-research-track.html" class="dropdown-item">Research Track</a>
+                <a href="cfp-applications-track.html" class="dropdown-item">Applications Track</a>
+                <a href="cfp-tutorials.html" class="dropdown-item">Tutorials</a>
+                <a href="cfp-jdsa-journal-track.html" class="dropdown-item">JDSA Journal Track</a>
+                <a href="cfp-mlj-journal-track.html" class="dropdown-item">MLJ Journal Track</a>
+                <a href="cfp-special-sessions.html" class="dropdown-item">Special Sessions</a>
+                <a href="cfp-student-forum.html" class="dropdown-item">Student Forum</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Program
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="program-at-a-glance.html" class="dropdown-item">Program at a Glance</a>
+                <a href="detailed-program.html" class="dropdown-item">Detailed Program</a>
+                <a href="accepted.html" class="dropdown-item">Accepted Contributions</a>
+                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Special Sessions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a href="https://sites.google.com/view/lianyongqi/more/call-for-paper" target="_blank" class="dropdown-item">Private, Secure, and Trust Data Analytics (PSTDA2024)</a>
+                  <a href="https://indigopurple.github.io/DSAA/dsaa2024.html" target="_blank" class="dropdown-item">Computational Imaging, Vision, and Language (CIVIL)</a>
+                  <a href="https://www.dsaa2024-specialsession-data-driven-material-science.com/homepage" target="_blank" class="dropdown-item">Advancing Materials Science Through Data Science</a>
+                  <a href="https://dsaa2024.inesctec.pt" target="_blank" class="dropdown-item">Learning from Temporal Data</a>
+                  <a href="https://sites.google.com/view/dsaa-scda/home" target="_blank" class="dropdown-item">Smart City Data Analytics: Applications and Implications</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Attend
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="registration.html" class="dropdown-item">Registration</a>
+                <a href="venue.html" class="dropdown-item">Venue & Accommodation</a>
+                <a href="travel_grant.html" class="dropdown-item">IEEE CIS Travel Grant</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="organizers.html">Organizers</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="sponsors.html">Sponsors</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                For Authors
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="https://secure.ethicspoint.com/domain/media/en/gui/20410/index.html" class="dropdown-item" target="_blank">IEEE Ethics Reporting</a>
+                <a href="ai_generated_text.html" class="dropdown-item">Guidance for IEEE Publications Regarding AI-Generated Text</a>
+                <a href="camera-ready-guidelines.html" class="dropdown-item">Camera-Ready Guidelines</a>
+              </div>
+            </li>
+          </ul>
+          <span class="navbar-text" style="padding: 0;">
+            <a class="nav-link" href="https://twitter.com/IEEEDSAA" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"> <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/> </svg></a>
+          </span>
+        </div>
+      </nav>
+    </div>
+    <div class="container" id="subpage">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Detailed Program</h2>
+          <hr/>
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <h3>Day 1: October 6, 2024 (Sunday)</h3>
+              <br>
+            </div>
+            <div class="col-md-4 offset-md-4">
+              <table>
+                <tr>
+                  <td>9:00-17:30</td>
+                  <td style="background-color: #f2f2f2;">Student Forum</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <hr/>
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <h3>Day 2: October 7, 2024 (Monday)</h3>
+              <br>
+              <table>
+                <tr>
+                  <td>8:00-9:00</td>
+                  <td colspan="3" style="background-color: #d5e8d4;">Breakfast</td>
+                </tr>
+                <tr>
+                  <td>9:00-9:30</td>
+                  <td colspan="3" style="background-color: #ffe6cc;">Opening remarks & Best paper awards</td>
+                </tr>
+                <tr>
+                  <td>9:30-10:30</td>
+                  <td colspan="3" style="background-color: #f8cecc;">Plenary Session</td>
+                </tr>
+                <tr>
+                  <td>10:30-11:00</td>
+                  <td colspan="3" style="background-color: #d5e8d4;">Coffee Break</td>
+                </tr>
+                <tr>
+                  <td>11:00-12:30</td>
+                  <td style="background-color: #dae8fc;"><a href="#research_1">Research I: Graph and networks</a></td>
+                  <td style="background-color: #dae8fc;">Applications I</td>
+                  <td style="background-color: #dae8fc;">Special session: Learning from temporal data</td>
+                <tr>
+                  <td>12:30-14:00</td>
+                  <td colspan="3" style="background-color: #d5e8d4;">Lunch</td>
+                </tr>
+                <tr>
+                  <td>14:00-15:30</td>
+                  <td style="background-color: #dae8fc;"><a href="#research_2">Research II: Clustering</a></td>
+                  <td style="background-color: #dae8fc;">Applications II</td>
+                  <td style="background-color: #dae8fc;">Special session: Computational Imaging, Vision, and Language (CIVIL)</td>
+                </tr>
+                <tr>
+                  <td>15:30-16:00</td>
+                  <td colspan="3" style="background-color: #d5e8d4;">Coffee Break</td>
+                </tr>
+                <tr>
+                  <td>16:00-17:30</td>
+                  <td style="background-color: #dae8fc;"><a href="#research_3">Research III: Multi-modal multi-view analysis</a></td>
+                  <td style="background-color: #dae8fc;">Tutorial 1: Adversarial Robustness in Graph Neural Networks: Recent Advances and New Frontier</td>
+                  <td style="background-color: #dae8fc;">Special session: Computational Imaging, Vision, and Language (CIVIL)</td>
+                </tr>
+                <tr>
+                  <td>18:30-</td>
+                  <td colspan="3" style="background-color: #d5e8d4;">Reception</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <hr/>
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <h3>Day 3: October 8, 2024 (Tuesday)</h3>
+              <br>
+              <table>
+                <tr>
+                  <td>8:00-9:00</td>
+                  <td colspan="3" style="background-color: #d5e8d4;">Breakfast</td>
+                </tr>
+                <tr>
+                  <td>9:00-9:30</td>
+                  <td colspan="3"></td>
+                </tr>
+                <tr>
+                  <td>9:30-10:30</td>
+                  <td colspan="3" style="background-color: #f8cecc;">Plenary Session</td>
+                </tr>
+                <tr>
+                  <td>10:30-11:00</td>
+                  <td colspan="3" style="background-color: #d5e8d4;">Coffee Break</td>
+                </tr>
+                <tr>
+                  <td>11:00-12:30</td>
+                  <td style="background-color: #dae8fc;"><a href="#research_4">Research IV: Data augmentation & Self-supervised learning</a></td>
+                  <td style="background-color: #dae8fc;">Applications III</td>
+                  <td style="background-color: #dae8fc;">Tutorial 2: Time Series Data Mining: A Unifying View</td>
+                <tr>
+                  <td>12:30-14:00</td>
+                  <td colspan="3" style="background-color: #d5e8d4;">Lunch</td>
+                </tr>
+                <tr>
+                  <td>14:00-15:30</td>
+                  <td style="background-color: #dae8fc;"><a href="#research_5">Research V: AI for health</a></td>
+                  <td style="background-color: #dae8fc;">Applications IV</td>
+                  <td style="background-color: #dae8fc;">Special session: Private, Secure, and Trust Data Analytics (PSTDA)</td>
+                </tr>
+                <tr>
+                  <td>15:30-16:00</td>
+                  <td colspan="3" style="background-color: #d5e8d4;">Coffee Break</td>
+                </tr>
+                <tr>
+                  <td>16:00-17:30</td>
+                  <td style="background-color: #dae8fc;"><a href="#research_6">Research VI: Online social media analysis (misinformation, hate speech)</a></td>
+                  <td style="background-color: #dae8fc;">Tutorial 3: Architecture design: from neural networks to foundation models</td>
+                  <td style="background-color: #dae8fc;">Special session: Private, Secure, and Trust Data Analytics (PSTDA)</td>
+                </tr>
+                <tr>
+                  <td>18:30-</td>
+                  <td colspan="3" style="background-color: #d5e8d4;">Dinner</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <hr/>
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <h3>Day 4: October 9, 2024 (Wednesday)</h3>
+              <br>
+              <table>
+                <tr>
+                  <td>8:00-9:00</td>
+                  <td colspan="3" style="background-color: #d5e8d4;">Breakfast</td>
+                </tr>
+                <tr>
+                  <td>9:00-9:30</td>
+                  <td colspan="3"></td>
+                </tr>
+                <tr>
+                  <td>9:30-10:30</td>
+                  <td colspan="3" style="background-color: #f8cecc;">Plenary Session</td>
+                </tr>
+                <tr>
+                  <td>10:30-11:00</td>
+                  <td colspan="3" style="background-color: #d5e8d4;">Coffee Break</td>
+                </tr>
+                <tr>
+                  <td>11:00-12:30</td>
+                  <td style="background-color: #dae8fc;"><a href="#research_7">Research VII: Time series</a></td>
+                  <td style="background-color: #dae8fc;">Applications V</td>
+                  <td style="background-color: #dae8fc;">Tutorial 4: Interpretable and Explainable Time Series Mining</td>
+                <tr>
+                  <td>12:30-14:00</td>
+                  <td colspan="3" style="background-color: #d5e8d4;">Lunch</td>
+                </tr>
+                <tr>
+                  <td>14:00-15:30</td>
+                  <td style="background-color: #dae8fc;"><a href="#research_8">Research VIII: Anomaly detection & Imbalanced learning</a></td>
+                  <td style="background-color: #dae8fc;">Applications VI</td>
+                  <td style="background-color: #dae8fc;">Special session: Smart City Data Analytics</td>
+                </tr>
+                <tr>
+                  <td>15:30-16:00</td>
+                  <td colspan="3" style="background-color: #d5e8d4;">Coffee Break</td>
+                </tr>
+                <tr>
+                  <td>16:00-17:30</td>
+                  <td style="background-color: #dae8fc;"><a href="#research_9">Research IX: Text analytics</a></td>
+                  <td style="background-color: #dae8fc;">Special session: Advancing Materials Science Through Data Science</td>
+                  <td style="background-color: #dae8fc;">Special session: Smart City Data Analytics</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <hr/>
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <h3>Day 5: October 10, 2024 (Thursday)</h3>
+              <br>
+            </div>
+            <div class="col-md-4 offset-md-4">
+              <table>
+                <tr>
+                  <td>9:00-10:30</td>
+                  <td style="background-color: #dae8fc;">Panel</td>
+                </tr>
+                <tr>
+                  <td>10:30-11:00</td>
+                  <td style="background-color: #ffe6cc;">Closing</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <hr/>
+          <div class="row">
+            <div class="col-md-12">
+              <h4 id="research_1">Research I: Graph and networks</h4>
+              <p>11:00 - 12:30, October 7, 2024 (Monday)</p>
+              <ul>
+                <li>
+                  Estimate and Reduce Uncertainty in Uncertain Graphs
+                  <br>
+                  <i>Naheed Anjum Arafat, Ehsan Bonabi Mobaraki, Arijit Khan, Yllka Velaj and Francesco Bonchi</i>
+                </li>
+                <li>
+                  Semi-supervised Coarsening of Bipartite Graphs for Text Classification via Graph Neural Network
+                  <br>
+                  <i>Nícolas Roque dos Santos, Diego Minatel, Alan Demétrius Baria Valejo and Alneu de Andrade Lopes</i>
+                </li>
+                <li>
+                  Influence Role Recognition and LLM-based Scholar Recommendation in Academic Social Networks
+                  <br>
+                  <i>Prasad Calyam, Xiyao Cheng, Mayank Kejriwal, Yuanxun Zhang and Lakshmi Srinivas Edara</i>
+                </li>
+              </ul>
+              <h4 id="research_2">Research II: Clustering</h4>
+              <p>14:00 - 15:30, October 7, 2024 (Monday)</p>
+              <ul>
+                <li>
+                  Validating Arbitrary Shaped Clusters - A Survey
+                  <br>
+                  <i>Georg Stefan Schlake and Christian Beecks</i>
+                </li>
+                <li>
+                  Using Annealing to Accelerate Triangle Inequality k-means
+                  <br>
+                  <i>Alibek Zhakubayev and Greg Hamerly</i>
+                </li>
+                <li>
+                  Beta k-means: Accelerating k-means Using Probabilistic Cluster Filtering
+                  <br>
+                  <i>Alibek Zhakubayev and Greg Hamerly</i>
+                </li>
+                <li>
+                  A Novel Particle Swarm Optimization Algorithm for Meta-heuristic Analysis Mechanism Based on Population Learning Strategies and Adaptive Selection of Leadership Particles
+                  <br>
+                  <i>Yuheng Wu, Xingyu Zhu, Wenxu Zhao and Xiaona Xia</i>
+                </li>
+              </ul>
+              <h4 id="research_3">Research III: Multi-modal multi-view analysis</h4>
+              <p>16:00 - 17:30, October 7, 2024 (Monday)</p>
+              <ul>
+                <li>
+                  Diffusion Models for Cross-Domain Image-to-Image Translation with Paired and Partially Paired Datasets
+                  <br>
+                  <i>Evan Bell and Dan Li</i>
+                </li>
+                <li>
+                  Beyond Simple Averaging: Improving NLP Ensemble Performance with Topological-Data-Analysis-Based Weighting
+                  <br>
+                  <i>Polina Proskura and Alexey Zaytsev</i>
+                </li>
+                <li>
+                  Multi-view relational evidential c-medoid clustering with adaptive weighted
+                  <br>
+                  <i>Armel Soubeiga, Violaine Antoine and Sylvain Moreno</i>
+                </li>
+              </ul>
+              <h4 id="research_4">Research IV: Data augmentation & Self-supervised learning</h4>
+              <p>11:00 - 12:30, October 8, 2024 (Tuesday)</p>
+              <ul>
+                <li>
+                  Masked Contrastive Representation Learning for Self-supervised Visual Pre-training
+                  <br>
+                  <i>Yuchong Yao, Nandakishor Desai and Marimuthu Palaniswami</i>
+                </li>
+                <li>
+                  Efficient Data Completion and Augmentation
+                  <br>
+                  <i>Antonina Krajewska and Ewa Niewiadomska-Szynkiewicz</i>
+                </li>
+                <li>
+                  CL-FML: Cluster-based & Label-aware Federated Meta-Learning for On-Demand Classification Tasks
+                  <br>
+                  <i>Tahani Aladwani, Christos Anagnostopoulos, Shameem Puthiya Parambath and Fani Deligianni</i>
+                </li>
+              </ul>
+              <h4 id="research_5">Research V: AI for health</h4>
+              <p>14:00 - 15:30, October 8, 2024 (Tuesday)</p>
+              <ul>
+                <li>
+                  Media Bias Matters: Understanding the Impact of Politically Biased News on Vaccine Attitudes in Social Media
+                  <br>
+                  <i>Bohan Jiang, Lu Cheng, Zhen Tan, Ruocheng Guo and Huan Liu</i>
+                </li>
+                <li>
+                  AI-based Mental Health Assessment for Adolescents Using Their Daily Digital Activities
+                  <br>
+                  <i>Do Hyung Kim, Joonsung Lee, Taehwi Lee, Soeun Baek, Seonghyun Jin, Haeun Yoo, Youngeun Cho, Seonghyeon Park, Kwangsu Cho and Chang-Gun Lee</i>
+                </li>
+                <li>
+                  HeTAN: Heterogeneous Graph Triplet Attention Network for Drug Repurposing
+                  <br>
+                  <i>Farhan Tanvir, Khaled Mohammed Saifuddin, Tanvir Hossain, Arunkumar Bagavathi and Esra Akbas</i>
+                </li>
+              </ul>
+              <h4 id="research_6">Research VI: Online social media analysis (misinformation, hate speech)</h4>
+              <p>16:00 - 17:30, October 8, 2024 (Tuesday)</p>
+              <ul>
+                <li>
+                  Coded Term Discovery for Online Hate Speech Detection
+                  <br>
+                  <i>Dhanush Kikkisetti, Raza Ul Mustafa, Wendy Melillo, Roberto Corizzo, Zois Boukouvalas, Jeff Gill and Nathalie Japkowicz</i>
+                </li>
+                <li>
+                  Let Me Generate That for You: Generative Data Augmentation for Misinformation Detection in Low-Resource Environments
+                  <br>
+                  <i>Autumn Toney and Lisa Singh</i>
+                </li>
+                <li>
+                  Model Attribution in Machine-Generated Disinformation: A Domain Generalization Approach with Supervised Contrastive Learning
+                  <br>
+                  <i>Alimohammad Beigi, Zhen Tan, Nivedh Mudiam, Canyu Chen, Kai Shu and Huan Liu</i>
+                </li>
+              </ul>
+              <h4 id="research_7">Research VII: Time series</h4>
+              <p>11:00 - 12:30, October 9, 2024 (Wednesday)</p>
+              <ul>
+                <li>
+                  Can Large Language Models be Anomaly Detectors for Time Series?
+                  <br>
+                  <i>Sarah Alnegheimish, Linh Nguyen, Laure Berti-Equille and Kalyan Veeramachaneni</i>
+                </li>
+                <li>
+                  Discovering Structural Regularities in Time Series via Gaussian Processes
+                  <br>
+                  <i>Jan David Hüwel and Christian Beecks</i>
+                </li>
+                <li>
+                  Accurate estimation of cross-excitation in multivariate Hawkes process models of infectious diseases
+                  <br>
+                  <i>Youness Diouane, Frederic Schoenberg and George Mohler</i>
+                </li>
+              </ul>
+              <h4 id="research_8">Research VIII: Anomaly detection & Imbalanced learning</h4>
+              <p>14:00 - 15:30, October 9, 2024 (Wednesday)</p>
+              <ul>
+                <li>
+                  Improving GNN-based Methods for Scam Detection in Bitcoin Transactions - A Practical Case Study
+                  <br>
+                  <i>Karanjot Saggu, Paula Branco and Guy-Vicent Jourdan</i>
+                </li>
+                <li>
+                  Data Augmentation's Effect on Machine Learning Models when Learning with Imbalanced Data
+                  <br>
+                  <i>Damien Dablain and Nitesh Chawla</i>
+                </li>
+                <li>
+                  MetaGAD: Meta Representation Adaptation for Few-Shot Graph Anomaly Detection
+                  <br>
+                  <i>Xiongxiao Xu, Kaize Ding, Canyu Chen and Kai Shu</i>
+                </li>
+              </ul>
+              <h4 id="research_9">Research IX: Text analytics</h4>
+              <p>16:00 - 17:30, October 9, 2024 (Wednesday)</p>
+              <ul>
+                <li>
+                  Local Hierarchy-Aware Text-Label Association for Hierarchical Text Classification
+                  <br>
+                  <i>Ashish Kumar and Durga Toshniwal</i>
+                </li>
+                <li>
+                  Deep Contrastive Active Learning for Out-of-domain Filtering in Dialog Systems
+                  <br>
+                  <i>Roland Oruche, Marcos Zampieri and Prasad Calyam</i>
+                </li>
+                <li>
+                  Transparent Neighborhood Approximation for Text Classifier Explanation by Probability-based Editing
+                  <br>
+                  <i>Yi Cai, Arthur Zimek, Eirini Ntoutsi and Gerhard Wunder</i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="row">
+        <div class="col-md-10 offset-md-1" style="text-align: center;">
+          <span>DSAA 2024 | San Diego, CA, United States</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
