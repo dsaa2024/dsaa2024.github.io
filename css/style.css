@@ -25,6 +25,15 @@ hr {
     text-align: center;
 }
 
+#keynote p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+}
+
+#keynote img {
+    width: 13em;
+}
+
 #org {
     text-align: center;
 }
