@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Student Forum | DSAA 2024</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            /* font-size: smaller; */
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+    </style>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">DSAA 2024</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="key-dates.html">Key Dates</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Calls
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="cfp-research-track.html" class="dropdown-item">Research Track</a>
+                <a href="cfp-applications-track.html" class="dropdown-item">Applications Track</a>
+                <a href="cfp-tutorials.html" class="dropdown-item">Tutorials</a>
+                <a href="cfp-jdsa-journal-track.html" class="dropdown-item">JDSA Journal Track</a>
+                <a href="cfp-mlj-journal-track.html" class="dropdown-item">MLJ Journal Track</a>
+                <a href="cfp-special-sessions.html" class="dropdown-item">Special Sessions</a>
+                <a href="cfp-student-forum.html" class="dropdown-item">Student Forum</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Program
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="program-at-a-glance.html" class="dropdown-item">Program at a Glance</a>
+                <a href="detailed-program.html" class="dropdown-item">Detailed Program</a>
+                <a href="keynotes.html" class="dropdown-item">Keynotes</a>
+                <a href="panel.html" class="dropdown-item">Panel Discussion</a>
+                <a href="student-forum.html" class="dropdown-item">Student Forum</a>
+                <a href="accepted.html" class="dropdown-item">Accepted Contributions</a>
+                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Special Sessions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a href="https://sites.google.com/view/lianyongqi/more/call-for-paper" target="_blank" class="dropdown-item">Private, Secure, and Trust Data Analytics (PSTDA2024)</a>
+                  <a href="https://indigopurple.github.io/DSAA/dsaa2024.html" target="_blank" class="dropdown-item">Computational Imaging, Vision, and Language (CIVIL)</a>
+                  <a href="https://www.dsaa2024-specialsession-data-driven-material-science.com/homepage" target="_blank" class="dropdown-item">Advancing Materials Science Through Data Science</a>
+                  <a href="https://dsaa2024.inesctec.pt" target="_blank" class="dropdown-item">Learning from Temporal Data</a>
+                  <a href="https://sites.google.com/view/dsaa-scda/home" target="_blank" class="dropdown-item">Smart City Data Analytics: Applications and Implications</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Attend
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="registration.html" class="dropdown-item">Registration</a>
+                <a href="venue.html" class="dropdown-item">Venue & Accommodation</a>
+                <a href="travel_grant.html" class="dropdown-item">IEEE CIS Travel Grant</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="organizers.html">Organizers</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="sponsors.html">Sponsors</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                For Authors
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="https://secure.ethicspoint.com/domain/media/en/gui/20410/index.html" class="dropdown-item" target="_blank">IEEE Ethics Reporting</a>
+                <a href="ai_generated_text.html" class="dropdown-item">Guidance for IEEE Publications Regarding AI-Generated Text</a>
+                <a href="camera-ready-guidelines.html" class="dropdown-item">Camera-Ready Guidelines</a>
+              </div>
+            </li>
+          </ul>
+          <span class="navbar-text" style="padding: 0;">
+            <a class="nav-link" href="https://twitter.com/IEEEDSAA" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"> <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/> </svg></a>
+          </span>
+        </div>
+      </nav>
+    </div>
+    <div class="container" id="subpage">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <h2>Student Forum</h2>
+          <h3>Program Schedule</h3>
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <h3>October 6, 2024 (Sunday)</h3>
+              <br>
+              <table>
+                <tr>
+                  <td>10:30-11:00</td>
+                  <td style="background-color: #ffe6cc;">Introduction and Ice-Breaker</td>
+                </tr>
+                <tr>
+                  <td>11:00-11:45</td>
+                  <td style="background-color: #f8cecc;">Keynote: Vagelis Papalexakis, UC Riverside</td>
+                </tr>
+                <tr>
+                  <td>11:45-12:30</td>
+                  <td style="background-color: #dae8fc;">Research Pitch Game</td>
+                </tr>
+                <tr>
+                  <td>12:30-13:00</td>
+                  <td style="background-color: #f8cecc;">Organizers Stories</td>
+                </tr>
+                <tr>
+                  <td>13:00-14:00</td>
+                  <td style="background-color: #d5e8d4;">Lunch</td>
+                </tr>
+                <tr>
+                  <td>14:00-15:00</td>
+                  <td style="background-color: #f8cecc;">
+                    Panel Discussion: PhD Student Life
+                    <br>
+                    -	How to work with an advisor (not like undergraduate school)
+                  </td>
+                </tr>
+                <tr>
+                  <td>15:00-16:00</td>
+                  <td style="background-color: #dae8fc;">Poster Session</td>
+                </tr>
+                <tr>
+                  <td>16:00-21:00</td>
+                  <td style="background-color: #d5e8d4;">Social Event / Free Time (Seaworld!!! :D)</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <hr/>
+          <h3>Panel Discussion with Recent Graduates</h3>
+          <br>
+          <h4>Sharing Experiences</h4>
+          <ol>
+            <li>Can each of you briefly describe your journey through graduate school? What were some of the biggest challenges you faced, and how did you overcome them?</li>
+            <li>How did you decide on your specific area of study and the graduate program you chose?</li>
+          </ol>
+          <h4>Scholarships and Grants</h4>
+          <ol>
+            <li>Can you talk about the types of scholarships or grants you received during your graduate studies?</li>
+            <li>How did you find out about these funding opportunities, and what was the application process like?</li>
+          </ol>
+          <h4>Career Opportunities Post-Graduation</h4>
+          <ol>
+            <li>How did your graduate degree influence your career path and job opportunities?</li>
+            <li>What career opportunities have you explored since graduating, and how has your graduate education benefited you in these roles?</li>
+          </ol>
+          <h4>General Advice</h4>
+          <ol>
+            <li>What do you wish you had known before starting graduate school?</li>
+            <li>What final piece of advice would you give to students who are considering pursuing graduate studies?</li>
+          </ol>
+          <hr/>
+          <h3>Panelist</h3>
+          <div class="row" id="keynote">
+            <div class="col-md-3">
+              <img src="pic/qiuxiao.jpg" alt="Qiuxiao Chen" class="img-responsive center-block">
+            </div>
+            <div class="col-md-9">
+              <h4 style="display: inline;">Qiuxiao Chen</h4>&nbsp;&nbsp;&nbsp;<i>Qiuxiao.Chen@csusb.edu</i>
+              <p>
+                Qiuxiao Chen is an incoming Assistant Professor in the School of Computer Science and Engineering (CSE) at California State University, San Bernardino. Prior to joining CSUSB, Dr. Chen obtained a Ph.D. in Computer Science from Utah State University (USU). Her Ph.D. research focused on computer vision for autonomous driving, 3D object detection, and self-attention mechanisms. Dr. Chen's research interests encompass (1) autonomous driving systems utilizing deep learning and (2) image processing for intelligent parking systems.
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row" id="keynote">
+            <div class="col-md-3">
+              <img src="pic/ramu.png" alt="Ramu Gautam" class="img-responsive center-block">
+            </div>
+            <div class="col-md-9">
+              <h4 style="display: inline;">Ramu Gautam</h4>&nbsp;&nbsp;&nbsp;<i>ramu.gautam@unlv.edu</i>
+              <p>
+                Ramu Gautam is a Ph.D. student in Electrical and Computer Engineering at the University of Nevada, Las Vegas, supervised by Dr. Mei Yang. He holds a M.S. degree in Nanotechnology from Louisiana Tech University and B.E. in Electronics and Communication Engineering from Tribhuvan University. His research interests include biological image processing, multi-object tracking and few-shot learning. Currently, he is focused on developing transformer-based methods for tracking subcellular proteins in fluorescence microscopy images.
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row" id="keynote">
+            <div class="col-md-3">
+              <img src="pic/nicolas.jpg" alt="Nicolas Roque dos Santos" class="img-responsive center-block">
+            </div>
+            <div class="col-md-9">
+              <h4 style="display: inline;">Nicolas Roque dos Santos</h4>&nbsp;&nbsp;&nbsp;<i>nicolas.roquedossantos2@ucr.edu</i>
+              <p>
+                Nícolas is a PhD candidate in Computer Science at the University of São Paulo, Brazil, and a Visiting Scholar at the University of California, Riverside, co-supervised by Dr. Alneu de Andrade Lopes and Dr. Vagelis Papalexakis. He also holds an MSc from the University of São Paulo and a B.S. from the Federal University of Mato Grosso do Sul, both in Computer Science. His research interests include Graph Machine Learning, Data Mining, and Tensor Decomposition. Currently, he is focused on developing graph reduction methods to alleviate the computational cost of training Graph Neural Networks (GNNs) on large-scale graphs.
+              </p>
+            </div>
+          </div>
+          <hr/>
+          <h3>Accepted Papers</h3>
+          <br>
+          <ul>
+            <li>
+              Surveying the Terrain of Social Media Platforms via User Migration Patterns
+              <br>
+              <i>Ujun Jeong (Arizona State University)*; Huan Liu (Arizona State University)</i>
+            </li>
+            <li>
+              Induced Partitioning for Incremental Feature Selection via Rough Set Theory and Long-Tail Position Grey Wolf Optimization
+              <br>
+              <i>Said Al Afghani (Khon Kaen University)*; Khamron Sunat (Khamron Sunat); Sattathorn Sooksai (Khon Kaen University)</i>
+            </li>
+            <li>
+              Designing Robust Deep Learning Models from the Statistical Perspective
+              <br>
+              <i>Zhichao Hou (North Caroline State University)*</i>
+            </li>
+            <li>
+              Language Explanations for Self-Driving Scenes
+              <br>
+              <i>Alexis Luevanos (California State University, San Bernardino); Calvin Glisson (California State University, San Bernardino); Vamsi Sivakavi (California State University, San Bernardino); qiuxiao chen (California State University, San Bernardino)*</i>
+            </li>
+            <li>
+              Generating Synthetic Kilter Board Bouldering Climbs with RNNs and Multitask Learning
+              <br>
+              <i>Vinicius Kenton Dugue (California State University, Long Beach)*; Amir Ghasemkhani (California State University, Long Beach)</i>
+            </li>
+            <li>
+              Certain and Approximately Certain Models for Statistical Learning
+              <br>
+              <i>Cheng Zhen (Oregon State University)*</i>
+            </li>
+            <li>
+              Intelligent Reflecting Surface Assisted Wireless Spectrum Monitoring with Decentralized On-device Learning
+              <br>
+              <i>Sicheng Liu (San Francisco State University)*; Qun Wang (San Francisco State University); Zhuwei Qin (San Francisco State University)</i>
+            </li>
+            <li>
+              Enhancing Rain Prediction in Australia Using Machine Learning: Tackling Imbalanced Weather Datasets with Pre-processing and Sampling Techniques
+              <br>
+              <i>Andrew Valdivia (CSULB)*; Amir Ghasemkhani (CSULB)</i>
+            </li>
+            <li>
+              SLIMgen: Multi-Agent Code and Documentation Generation
+              <br>
+              <i>Aaron Lin (University of California, Riverside)*; Jonathan Emmons (University of California, Riverside); Raul Razo (University of California, Riverside); Yuchen Zhu (University of California, Riverside)</i>
+            </li>
+            <li>
+              Intelligent Reflecting Surface Assisted Wireless Spectrum Monitoring with Decentralized On-device Learning
+              <br>
+              <i>Satvik Verma (SFSU)*; Qun Wang (SFSU)</i>
+            </li>
+            <li>
+              Use and Compare LASSO, SCAD/MCP for High-dimensional Data with Continuous Outcome Variable
+              <br>
+              <i>Kaustubh R Harnoor (UC Santa Cruz)*</i>
+            </li>
+            <li>
+              A Deep Learning Approach to Sheep Segmentation and Activity Classification Utilizing U-Net and Long Short Term Memory Models
+              <br>
+              <i>Nathan Kelly (California State University San Bernardino); Abir Hussain (University of Sharjah); Khalil Dajani (California State University San Bernardino); Yunfei Hou (California State University San Bernardino); Wasiq Dr Khan (Liverpool John Moores University)*; Bilal M Khan (California State University San Bernardino)</i>
+            </li>
+            <li>
+              DandelionAI: Leveraging Large Language Models for Mental Health Identification and Counseling
+              <br>
+              <i>Deepakindresh Narayana Gandhi (University of California Riverside)*; Ojasvi  Godha (University of California Riverside); Vaneesha  Singh (University of California Riverside); Xinping  Cui  (University of California Riverside); Xiaoyang  Zhou (Dandelion Fly); Yizhou  Wang  (Dandelion Fly)</i>
+            </li>
+            <li>
+              MappedPillars: A Map Knowledge-enhanced 3D Multi-object Detection Approach
+              <br>
+              <i>Ziye Qin (Southwest Jiaotong University, University of California at RIverside)*; Haishan Liu (University of California at Riverside); Chuheng Wei (University of California at Riverside); Guoyuan Wu (UC Riverside); Zhanbo Sun (Southwest Jiaotong University); Peng Hao (CE-CERT at University of California -- Riverside); Matthew Barth (University of California, Riverside)</i>
+            </li>
+            <li>
+              LLM's for Time Series Data
+              <br>
+              <i>Saeed Tajik Hesarkuchak (The University of Oklahoma)*; Beiyu lin (University of Nevada - Las Vegas)</i>
+            </li>
+            <li>
+              LLM for Explainable AI
+              <br>
+              <i>Ahsan Bilal (University of Oklahoma )*; Beiyu lin (University of Nevada - Las Vegas)</i>
+            </li>
+            <li>
+              Two-Step Hierarchical Multi-Camera People Tracking
+              <br>
+              <i>Eerina T Haque (Santa Clara University )*</i>
+            </li>
+            <li>
+              LLMs for Data-Centric AI
+              <br>
+              <i>Nam L Huynh (University of Oklahoma)*; Beiyu lin (University of Nevada - Las Vegas)</i>
+            </li>
+            <li>
+              Generating Suggestive Limitations from Research Articles Using LLM and Graph-Based Approach
+              <br>
+              <i>Ibrahim Al Azher (Northern Illinois University)*; Hamed Alhoori (Northern Illinois University)</i>
+            </li>
+            <li>
+              Promoting Fairness in Link Prediction with Graph Enhancement
+              <br>
+              <i>Yezi Liu (University of California Irvine)*; Hanning Chen (Univeristy of California, Irvine); Mohsen Imani ("University of California, Irvine")</i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="row">
+        <div class="col-md-10 offset-md-1" style="text-align: center;">
+          <span>DSAA 2024 | San Diego, CA, United States</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
